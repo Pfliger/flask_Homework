@@ -1,0 +1,47 @@
+# создание объявления
+POST http://127.0.0.1:5000/posts/
+Content-Type: application/json
+
+{
+  "title": "test post",
+  "text": "test text",
+  "user_id": 1
+}
+
+###
+
+# получение объявления
+GET http://127.0.0.1:5000/posts/6
+Content-Type: application/json
+
+###
+
+
+# удаление объявления
+DELETE http://127.0.0.1:5000/posts/7
+Content-Type: application/json
+
+
+###
+
+
+# создание пользователя
+POST http://127.0.0.1:5000/users/
+Content-Type: application/json
+
+{
+  "username": "test user",
+  "email": "test2@mail.ru",
+  "password": "testpassword12345"
+}
+
+###
+
+# получение пользователя
+GET http://127.0.0.1:5000/users/1
+Content-Type: application/json
+
+###
+
+
+
